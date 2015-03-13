@@ -1,6 +1,7 @@
 # Momentum
 
-Strategia Momentum 3-12 "od kuchni"
+## Strategia Momentum 3-12 (Jegadeesh, Narasimhan, and Sheridan Titman. "Returns to buying winners and selling losers: Implications for stock market efficiency." The Journal of Finance 48.1 (1993): 65-91.)
+
 
 Symbols.csv - baza symboli spółek notowanych na NYSE, AMEX i NASDAQ na dzień 2015-03-10
 
@@ -16,4 +17,4 @@ SharpeRatios.R - kod do utworzenia grafiki SHARPEplot.png
 
 
 
-pliki ~.R muszą być użyte chronologicznie
+## pliki ~.R muszą być użyte chronologicznie
