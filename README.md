@@ -1,6 +1,6 @@
 # Momentum
 
-#### Strategia MOM12-2 (Asness, Clifford S., Tobias J. Moskowitz, and Lasse Heje Pedersen. "Value and momentum everywhere." The Journal of Finance 68.3 (2013): 929-985.)
+#### Strategia MOM2-12 (Asness, Clifford S., Tobias J. Moskowitz, and Lasse Heje Pedersen. "Value and momentum everywhere." The Journal of Finance 68.3 (2013): 929-985.)
 
 
 Symbols.csv - baza symboli spółek notowanych na NYSE, AMEX i NASDAQ na dzień 2015-03-10
