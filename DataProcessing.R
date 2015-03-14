@@ -1,5 +1,5 @@
-Data<-read.csv("allData.csv") #ladujemy dane NYSE
-Data<-Data[,!is.na(Data[1,])] #bierzemy tylko spolki z pelna historia od 1981-01-30 do 2014-12-31
+Data<-read.csv("allData.csv") #³adujemy dane NYSE
+Data<-Data[,!is.na(Data[1,])] #bierzemy tylko spó³ki z pe³n¹ histori¹ od 1981-01-30 do 2014-12-31
 
 #Naprawiamy kalendarz
 Data[,1]<-as.Date(Data[,1])
@@ -11,7 +11,7 @@ db <- data.frame(Date = full.dates)
 Data <- left_join(db, Data)
 Data$X.1<-NULL
 
-#zamieniamy puste komÃ³rki wartoÅ“ciami z t-1
+#zamieniamy puste komórki wartoœciami z t-1
 for(s in 1:(length(Data))){
     for (t in 1:length(Data[,s])){
         if(is.na(Data[t,s])){
@@ -20,7 +20,7 @@ for(s in 1:(length(Data))){
     }
 }
 
-#zamieniamy wektory cen zamkniÃªcia wektorami stÃ³p zwrotu
+#zamieniamy wektory cen zamkniêcia wektorami stóp zwrotu
 logar<-function(vec){ 
     Return<-log(vec[-1]/vec)
     Return<-c(NA,(Return[1:(length(Return)-1)]))
@@ -29,15 +29,15 @@ logar<-function(vec){
 
 logData<-Data
 for(i in 1:(length(Data)-1) ){
-    logData[,i+1]<-as.data.frame(logar(as.numeric(Data[,i+1])))
+    logData[,i+1]<-as.data.frame(logar(as.numeric(Data[,i+1])))*100
 }
 
-#czyÅ“cimy tabelÃª
+#czyœcimy tabelê
 logData<-logData[2:length(logData[,1]),]
 row.names(logData)<-as.Date(logData[,1])
 logData<-logData[,2:length(logData)]
 
-#tworzymy tabelÃª ze skumulowanymi stopami zwrotu
+#tworzymy tabelê ze skumulowanymi stopami zwrotu
 sumData<-logData
 for(s in 1:(length(logData))){
     for (t in 1:length(logData[,s])){
