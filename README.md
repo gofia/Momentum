@@ -1,6 +1,6 @@
 # Momentum
 
-#### Strategia Momentum 3-12 (Jegadeesh, Narasimhan, and Sheridan Titman. "Returns to buying winners and selling losers: Implications for stock market efficiency." The Journal of Finance 48.1 (1993): 65-91.)
+#### Strategia MOM12-2 (Asness, Clifford S., Tobias J. Moskowitz, and Lasse Heje Pedersen. "Value and momentum everywhere." The Journal of Finance 68.3 (2013): 929-985.)
 
 
 Symbols.csv - baza symboli spółek notowanych na NYSE, AMEX i NASDAQ na dzień 2015-03-10
@@ -13,7 +13,7 @@ MomentumStrategies.R - kod potrzebny do wygenerowania składu portfeli Momentum,
 
 PerformancePlots.R - kod do utworzenia grafiki PERFORMANCEplot.png
 
-SharpeRatios.R - kod do utworzenia grafiki SHARPEplot.png
+SharpeRatios.R - kod do utworzenia grafik SHARPEplot
 
 
 
